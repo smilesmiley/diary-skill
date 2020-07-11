@@ -45,7 +45,7 @@ class Diary(MycroftSkill):
             answer= self.ask_and_save(survey, question, utterance, timestamp)
             survey.append((utterance, question, answer,timestamp))
         #saves question,answer, skill instance in a json file
-        with open(os.path.join(os.path.abspath('..'),'study_data','diary', timestamp + 'log_file_ours.json'), 'w') as f:
+        with open(os.path.join(os.path.abspath('..'),'study_data','diary', 'json',timestamp + 'log_file_ours.json'), 'w') as f:
             json.dump(survey, f, indent=4, sort_keys=True)
 
 
