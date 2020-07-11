@@ -32,8 +32,8 @@ class Diary(MycroftSkill):
         #asks question
         answer = self.ask_yesno(question)
         #saves audio
-        src = os.path.join(os.path.abspath(os.path.join('..')), 'study_data','audio','audio_file_user.wav')
-        dest = os.path.join(os.path.abspath(os.path.join('..')), 'study_data','audio',timestamp + "_question_" + str(number) + ".wav")
+        src = os.path.join(os.path.abspath(os.path.join('..')), 'study_data','diary','audio','audio_file_user.wav')
+        dest = os.path.join(os.path.abspath(os.path.join('..')), 'study_data','diary','audio',timestamp + "_question_" + str(number) + ".wav")
         os.rename(src, dest)
         return answer
     
@@ -45,7 +45,7 @@ class Diary(MycroftSkill):
             answer= self.ask_and_save(survey, question, utterance, timestamp)
             survey.append((utterance, question, answer,timestamp))
         #saves question,answer, skill instance in a json file
-        with open(os.path.join(self.root_dir, timestamp + 'log_file_ours.json'), 'w') as f:
+        with open(os.path.join(os.path.abspath('..'),'study_data','diary', timestamp + 'log_file_ours.json'), 'w') as f:
             json.dump(survey, f, indent=4, sort_keys=True)
 
 
