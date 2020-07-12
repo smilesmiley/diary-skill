@@ -20,7 +20,7 @@ class Diary(MycroftSkill):
                           10: "Which data could an attacker be interested in?",
                           11: "What security concerns do you have about this device?",
                           12: "Have you heard about any security issue in the news and which? If yes does this concern you or if no, why not?",
-                          13: "How would you compare your level of security concerns about this device to your level of concerns about your phone or laptop computer?",
+                          13: "How would you compare your level of security concerns about this device in comparison to your phone or laptop?",
                           14: "What advantages could an open-source device offer?",
                           15: "What disadvantages could an open-source device offer?",
                           16: "What would you prefer, an open-source device or a market leading device like Amazon's Echo and why?"
