@@ -48,7 +48,7 @@ class Diary(MycroftSkill):
         timestamp = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
         for i in range(1, len(self.questions)):
             question = self.questions[i]
-            answer = self._ask_user(i,question, survey, timestamp)
+            answer = self._ask_user(i,question, timestamp)
             survey.append(('diary', question, answer, timestamp))
         # saves question,answer, skill instance in a json file
         with open(os.path.join(os.path.abspath('..'), 'study_data', 'diary', 'json', timestamp + 'log_file_ours.json'),
