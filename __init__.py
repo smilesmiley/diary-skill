@@ -1,4 +1,7 @@
 from mycroft import MycroftSkill, intent_handler
+from datetime import datetime
+import json
+import os
 
 
 class Diary(MycroftSkill):
