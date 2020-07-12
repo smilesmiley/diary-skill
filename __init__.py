@@ -13,17 +13,17 @@ class Diary(MycroftSkill):
                           3: "How could the processing of your request to the smart speaker work?",
                           4: "Where exactly is the data spoken to the smart speaker processed?",
                           5: "Do you think some conversations could be recorded accidental and why?",
-                          6: "Have you ever asked Mycroft a question/command that you wish you could delete due to privacy concerns? What about it was sensitive?",
-                          7: "How would you feel if Mycroft would recorded accidental some conversations of you without being activated by you?",
+                          6: "Have you ever had a conversation with Mycroft that you wish you could delete due to privacy concerns? What about it was sensitive?",
+                          7: "How would you feel if Mycroft would recorded accidental some conversations without being activated by you?",
                           8: "Which attacks could happen in the background during your interaction?",
                           9: "What security concerning action could happen during your last interaction?",
                           10: "Which data could an attacker be interested in?",
                           11: "What security concerns do you have about this device?",
-                          12: "Have you heard about any security issue in the news and which? If yes does this concern you or if no, why not?",
+                          12: "Have you heard about any security issues in the news and which? If yes does this concern you or if no, why not?",
                           13: "How would you compare your level of security concerns about this device in comparison to your phone or laptop?",
                           14: "What advantages could an open-source device offer?",
                           15: "What disadvantages could an open-source device offer?",
-                          16: "What would you prefer, an open-source device or a market leading device like Amazon's Echo and why?"
+                          16: "What would you prefer? An open-source device or a market leading device like Amazon's Echo and why?"
 
                           }
 
