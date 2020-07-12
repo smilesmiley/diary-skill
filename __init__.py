@@ -46,7 +46,7 @@ class Diary(MycroftSkill):
     def _ask_all_questions(self):
         survey = []
         timestamp = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
-        for i in range(1, len(self.questions)):
+        for i in range(1, len(self.questions)+1):
             question = self.questions[i]
             answer = self._ask_user(i,question, timestamp)
             survey.append(('diary', question, answer, timestamp))
