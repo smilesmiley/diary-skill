@@ -31,7 +31,7 @@ class Diary(MycroftSkill):
         self.speak_dialog('diary')
         self._ask_all_questions()
      
-    def _ask_user(self,question,survey):
+    def _ask_user(self,question,survey,timestamp):
         #asks question
         answer = self.ask_yesno(question)
         #saves audio
@@ -45,8 +45,8 @@ class Diary(MycroftSkill):
         timestamp = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
         for i in range(1,len(self.questions)):
             question= self.questions[i]
-            answer= self.ask_and_save(survey, question, utterance, timestamp)
-            survey.append((utterance, question, answer,timestamp))
+            answer= self.ask_and_save(question, survey, timestamp)
+            survey.append(('diary', question, answer,timestamp))
         #saves question,answer, skill instance in a json file
         with open(os.path.join(os.path.abspath('..'),'study_data','diary', 'json',timestamp + 'log_file_ours.json'), 'w') as f:
             json.dump(survey, f, indent=4, sort_keys=True)
