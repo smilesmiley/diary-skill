@@ -37,7 +37,7 @@ class Diary(MycroftSkill):
         # asks question
         answer = self.ask_yesno(question)
         # saves audio
-        src = os.path.join(os.path.abspath('..'), 'study_data', 'diary', 'audio', 'audio_file_user.wav')
+        src = os.path.join(os.path.abspath('..'), 'study_data', 'audio', 'audio_file_user.wav')
         dest = os.path.join(os.path.abspath('..'), 'study_data', 'diary', 'audio',
                             timestamp + "_question_" + str(number) + ".wav")
         os.rename(src, dest)
