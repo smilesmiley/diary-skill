@@ -23,7 +23,7 @@ class Diary(MycroftSkill):
 
         }
 
-    @intent_file_handler('diary.intent')
+    @intent_handler('diary.intent')
     def handle_diary(self, message):
         self.speak_dialog('diary')
         self._ask_all_questions()
