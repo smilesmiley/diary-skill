@@ -10,7 +10,7 @@ class Diary(MycroftSkill):
         MycroftSkill.__init__(self)
         self.questions = {1: "What do you think happened to your audio which was captured to evaluate your Mycroft request?",
                           2: "How could the request processing of your smart speaker work?",
-                          3: "How would you feel if Mycroft would recorded accidental some conversations without being activated?",
+                          3: "How would you feel if Mycroft would record accidental some conversations without being activated?",
                           4: "Which attacks could happen in the background during your interaction?",
                           5: "Which data could an attacker be interested in?",
                           6: "Have you heard about any security issues in the news and which? If yes does this concern you or if no, why not?",
