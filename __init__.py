@@ -13,10 +13,10 @@ class Diary(MycroftSkill):
                           3: "How would you feel if Mycroft would record accidental some conversations without being activated?",
                           4: "Which attacks could happen in the background during your interaction?",
                           5: "Which data could an attacker be interested in?",
-                          6: "Have you heard about any security issues in the news and which? If yes does this concern you or if no, why not?",
+                          6: "What security incidents on the news concern you and why?",
                           7: "What advantages could an open-source device offer?",
                           8: "What disadvantages could an open-source device offer?",
-                          9: "What would you prefer? An open-source device or a market leading device like Amazon's Echo and why?"
+                          9: "Would you prefere an open-source device or a market leading device like Amazon's Echo and why?"
 
                           }
 
