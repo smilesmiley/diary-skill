@@ -8,15 +8,15 @@ import time
 class Diary(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
-        self.questions = {1: "What do you think happened to your audio which was captured to evaluate your Mycroft request?",
-                          2: "How could the request processing of your smart speaker work?",
-                          3: "How would you feel if Mycroft would record accidental some conversations without being activated?",
-                          4: "Which attacks could happen in the background during your interaction?",
+        self.questions = {1: 'What do you think happend to the audio of your request?',
+                          2: 'Describe how Mycroft’s software processes your request!',
+                          3: "How would you feel if Mycroft would accidentally record some conversations without being activated?",
+                          4: "Which attacks could happen in the background during our interaction?",
                           5: "Which data could an attacker be interested in?",
-                          6: "What security incidents on the news concern you and why?",
-                          7: "What advantages could an open-source device offer?",
-                          8: "What disadvantages could an open-source device offer?",
-                          9: "Would you prefere an open-source device or a market leading device like Amazon's Echo and why?"
+                          6: "What security incidents on the news about smart speaker concern you?",
+                          7: "What advantages does an open-source smart speaker offer?",
+                          8: "What disadvantages does an open-source smart speaker offer?",
+                          9: "Would you prefer an open-source smart speaker or a market leading device like Amazon's Alexa?"
 
                           }
 
