@@ -14,9 +14,8 @@ class Diary(MycroftSkill):
                           4: "Which attacks could happen in the background during our interaction?",
                           5: "Which data could an attacker be interested in?",
                           6: "What security incidents on the news about smart speaker concern you?",
-                          7: "What advantages does an open-source smart speaker offer?",
-                          8: "What disadvantages does an open-source smart speaker offer?",
-                          9: "Would you prefer an open-source smart speaker or a market leading device like Amazon's Alexa?"
+                          7: "What is your opinion on open-source devices in general?",
+                          8: "Would you prefer an open-source smart speaker or a market leading device like Amazon's Alexa?"
 
                           }
 
