@@ -7,7 +7,7 @@ import time
 
 class Diary(MycroftSkill):
     def __init__(self):
-        MycroftSkill.__init__(self)
+        super().__init__("DiarySkill")
         self.questions = {1: 'What do you think happend to the audio of your request?',
                           2: 'Describe how Mycroft’s software processes your request!',
                           3: "How would you feel if Mycroft would accidentally record some conversations without being activated?",
