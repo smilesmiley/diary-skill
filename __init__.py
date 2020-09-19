@@ -27,7 +27,7 @@ class Diary(MycroftSkill):
 
     def _ask_user(self, number,question, timestamp):
         # asks question
-        answer = self.ask_yesno(question)
+        answer = self.self.get_response(question,on_fail="I did not understand you.",num_retries=2)
         # saves audio
         src = os.path.join(os.path.abspath('..'), 'study_data', 'audio', 'audio_file_user.wav')
         dest = os.path.join(os.path.abspath('..'), 'study_data', 'diary', 'audio',
